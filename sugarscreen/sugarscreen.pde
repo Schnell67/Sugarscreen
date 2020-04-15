@@ -25,5 +25,4 @@ void draw()
   background(100);
   fill(0, 0, 255);
   ellipse(pos.x, pos.y, 50, 50);
-  
 }
