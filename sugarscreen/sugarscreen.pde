@@ -21,23 +21,10 @@ void setup()
 void draw()
 {
   
-  if(pos.x >= height)
-  {
-    pos.x += -1;
-  }
-  else if(pos.x <= 0)
-  {
-    pos.x += 1;
-  }
-  
-  if(pos.y >= height)
-  {
-    pos.y += -1;
-  }
-  else if(pos.y <= 0)
-  {
-    pos.y += 1;
-  }
+ if (pos.x + 25 >= width)
+deplacementX = -1;
+else if (pos.x - 25 <= 0)
+deplacementX = 1;
   
   pos.x += deplacementX;
   pos.y += deplacementY;
